@@ -6,7 +6,7 @@ on:
 
 jobs:
   check_beginner_class_availability:
-    name: Check if there are available tennis classes
+    name: Check if there are available beginner tennis classes
     runs-on: ubuntu-latest
 
     steps:
