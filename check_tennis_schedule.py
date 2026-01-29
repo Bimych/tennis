@@ -63,7 +63,7 @@ def _get_booking_url(card) -> str | None:
 
 def _is_class_eligible(title: str, weekday: str, hour: int) -> bool:
     return ("Beginner" in title) and (
-        (weekday in ["Mon","Tue","Wed","Thu","Fri"] and hour >= 10) or weekday == "Sun"
+        (weekday in ["Mon","Tue","Wed","Thu","Fri"] and hour >= 18) or weekday == "Sun"
     )
 
 def _has_sufficient_spaces(booking_url: str, needed) -> bool:
