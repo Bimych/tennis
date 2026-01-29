@@ -2,10 +2,11 @@ name: Checking begginer class tennis lessons
 
 env:
   SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
-  
+
 on:
   schedule:
     - cron: "*/10 * * * *"
+  workflow_dispatch:
 
 jobs:
   check_beginner_class_availability:
